@@ -1,0 +1,30 @@
+/* Responsive scroll margin for section anchors */
+:target {
+  scroll-margin-top: 6rem; /* Mobile */
+}
+
+@media (min-width: 768px) {
+  :target {
+    scroll-margin-top: 8rem; /* Tablet+ */
+  }
+}
+
+@media (min-width: 1024px) {
+  :target {
+    scroll-margin-top: 5rem; /* Desktop (sidebar takes less visual space) */
+  }
+}
+
+/* Optional: Add subtle highlight when section is targeted */
+section:target {
+  animation: highlight-section 0.6s ease-out;
+}
+
+@keyframes highlight-section {
+  0% {
+    background-color: rgba(255, 108, 108, 0.1);
+  }
+  100% {
+    background-color: transparent;
+  }
+}
