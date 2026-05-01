@@ -36,11 +36,11 @@ export class ServicesComponent {
   {
     id: 'engineering-services',
     title: 'Engineering Services',
-    summary: 'Professional HVAC installation, lifts, escalators, precision cooling, fire protection, and critical infrastructure systems across Srinagar, Jammu & Kashmir.',
+    summary: 'Professional HVAC installation, lifts, escalators, modular LGSF structures, BMS, office automation, fire protection, and critical infrastructure systems across Srinagar, Jammu & Kashmir.',
     icon: this.WrenchIcon,
-    highlights: ['HVAC systems', 'Vertical transport', 'Precision cooling', 'Hospital support', 'Fire safety'],
+    highlights: ['HVAC systems', 'LGSF structures', 'BMS automation', 'Vertical transport', 'Fire safety'],
     breakdownTitle: 'Engineering Services',
-    breakdownIntro: 'Concept Engineering Service delivers reliable engineering solutions for commercial, residential, healthcare, and industrial projects. We combine technical expertise, quality materials, and professional execution to ensure long-term performance, safety, and efficiency.',
+    breakdownIntro: 'Concept Engineering Service delivers reliable engineering solutions for commercial, residential, healthcare, and industrial projects. We combine technical expertise, quality materials, green building concepts, and professional execution to ensure long-term performance, safety, and efficiency.',
     breakdown: [
       {
         title: 'Installation of HVAC Systems',
@@ -69,6 +69,26 @@ export class ServicesComponent {
           'Controlled atmosphere chains for perishables',
           'Temperature-controlled storage solutions',
           'Custom refrigeration systems for commercial use'
+        ]
+      },
+      {
+        title: 'Modular LGSF Structures',
+        items: [
+          'Innovative modular construction using Light Gauge Steel Framing (LGSF)',
+          'Quick and efficient building solutions for residential, commercial, and institutional projects',
+          'Green building concepts with reduced material wastage and faster execution',
+          'Lightweight, durable, and precision-engineered structural systems',
+          'Design, planning, fabrication, and installation support'
+        ]
+      },
+      {
+        title: 'BMS & Office Automation',
+        items: [
+          'Building Management Systems (BMS) for centralized monitoring and control',
+          'Automation of lighting, HVAC, energy usage, and access systems',
+          'Smart office solutions for improved comfort, efficiency, and security',
+          'Sensor-based controls, scheduling, and energy optimization',
+          'Integration with existing building infrastructure and digital systems'
         ]
       },
       {
@@ -105,11 +125,11 @@ export class ServicesComponent {
   {
     id: 'it-web-development',
     title: 'Digital Solutions',
-    summary: 'Custom websites, business software, e-commerce stores, and scalable digital platforms built for modern businesses.',
+    summary: 'Custom websites, business software, e-commerce stores, digital marketing, and scalable digital platforms built for modern businesses.',
     icon: this.LayoutIcon,
-    highlights: ['Web platforms', 'E-commerce', 'UI/UX design', 'APIs', 'Integration'],
+    highlights: ['Web platforms', 'E-commerce', 'Digital marketing', 'UI/UX design', 'APIs'],
     breakdownTitle: 'Digital Solutions',
-    breakdownIntro: 'We help businesses grow online through modern websites, business automation tools, and secure digital systems designed for performance, user experience, and scalability.',
+    breakdownIntro: 'We help businesses grow online through modern websites, digital marketing, business automation tools, and secure digital systems designed for performance, user experience, and scalability.',
     breakdown: [
       {
         title: 'Web Platforms & Applications',
@@ -119,6 +139,16 @@ export class ServicesComponent {
           'E-commerce websites and online stores',
           'Booking and service management platforms',
           'SEO-friendly websites for better online visibility'
+        ]
+      },
+      {
+        title: 'Digital Marketing',
+        items: [
+          'Search engine optimization (SEO) for stronger organic visibility',
+          'Social media marketing and campaign management',
+          'Google Ads and paid advertising support',
+          'Content strategy for websites and digital channels',
+          'Lead generation and online brand growth'
         ]
       },
       {
@@ -169,11 +199,11 @@ export class ServicesComponent {
   {
     id: 'real-estate',
     title: 'Real Estate',
-    summary: 'Reliable real estate advisory, feasibility studies, development planning, and investment guidance in Jammu & Kashmir.',
+    summary: 'Reliable real estate advisory, project marketing, property listings, leasing support, feasibility studies, and investment guidance in Jammu & Kashmir.',
     icon: this.Layers3Icon,
-    highlights: ['Site evaluation', 'Feasibility', 'Development planning', 'Local expertise'],
+    highlights: ['Project marketing', 'Property listings', 'Commercial leasing', 'Feasibility', 'Local expertise'],
     breakdownTitle: 'Real Estate Services',
-    breakdownIntro: 'We support clients, investors, and developers with strategic real estate services backed by engineering insight, local market understanding, and practical execution planning.',
+    breakdownIntro: 'We support clients, investors, brands, and developers with strategic real estate services backed by engineering insight, local market understanding, and practical execution planning.',
     breakdown: [
       {
         title: 'Site Evaluation & Feasibility',
@@ -193,6 +223,16 @@ export class ServicesComponent {
           'Regulatory guidance and approvals support',
           'Cost planning and ROI assessment',
           'Local market advisory for Jammu & Kashmir'
+        ]
+      },
+      {
+        title: 'Marketing, Listings & Leasing',
+        items: [
+          'Marketing support for residential and commercial projects',
+          'Listing residential and commercial properties for sale, purchase, and rentals',
+          'Buyer, tenant, and investor lead generation support',
+          'Brand tie-ups for commercial spaces',
+          'Commercial leasing support for retail, office, and business spaces'
         ]
       }
     ]
