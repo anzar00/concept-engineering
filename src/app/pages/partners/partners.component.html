@@ -53,16 +53,15 @@
 
 
             <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-10">
-                <div *ngFor="let partner of group.items"
-                    class="bg-gray-50 p-6 rounded-lg shadow hover:shadow-lg transition text-center">
-                    <a [href]="partner.url" target="_blank" rel="noopener noreferrer">
-                        <img [src]="partner.logo" [alt]="partner.name"
-                            class="h-20 w-32 mx-auto mb-4 object-contain object-center aspect-[2/1]" />
-                    </a>
+                <a *ngFor="let partner of group.items" [href]="partner.url" target="_blank" rel="noopener noreferrer"
+                    [attr.aria-label]="'Visit ' + partner.name"
+                    class="block bg-gray-50 p-6 rounded-lg shadow hover:shadow-lg hover:-translate-y-0.5 transition text-center focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#ff6c6c] focus-visible:ring-offset-2">
+                    <img [src]="partner.logo" [alt]="partner.name"
+                        class="h-20 w-32 mx-auto mb-4 object-contain object-center aspect-[2/1]" />
                     <h3 class="text-xl font-semibold text-[#072c53] mb-2">{{ partner.name }}</h3>
                     <p class="text-gray-600 text-sm mb-2">{{ partner.description }}</p>
                     <p class="text-xs text-gray-500">Partnered since {{ partner.trustedSince }}</p>
-                </div>
+                </a>
             </div>
         </ng-container>
     </div>
