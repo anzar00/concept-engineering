@@ -45,11 +45,12 @@ export class ServicesComponent {
       {
         title: 'Installation of HVAC Systems',
         items: [
-          'VRV / VRF air conditioning systems for commercial buildings',
+          'VRV / VRF air conditioning systems for commercial / residential buildings',
           'Electric underfloor heating for modern homes and offices',
           'Hydronic underfloor heating for efficient thermal comfort',
           'Central heating and cooling using boilers, chillers, heat pumps, and radiators',
-          'Energy-efficient ventilation and climate control systems'
+          'Energy-efficient ventilation and climate control systems',
+          'Heat pumps for hot water supply to washrooms and kitchens'
         ]
       },
       {
@@ -72,9 +73,9 @@ export class ServicesComponent {
         ]
       },
       {
-        title: 'Modular LGSF Structures',
+        title: 'Modular LGSF Huts / Wodden Huts',
         items: [
-          'Innovative modular construction using Light Gauge Steel Framing (LGSF)',
+          'Innovative modular construction using Light Gauge Steel Framing (LGSF) / Wood',
           'Quick and efficient building solutions for residential, commercial, and institutional projects',
           'Green building concepts with reduced material wastage and faster execution',
           'Lightweight, durable, and precision-engineered structural systems',
@@ -184,13 +185,13 @@ export class ServicesComponent {
         ]
       },
       {
-        title: 'Architectural & Design Consultancy',
+        title: 'Structural, Architectural & MEP Consultancy',
         items: [
-          'Building and interior design',
-          '3D modeling and visual presentations',
-          'Concept planning and space optimization',
-          'Material and finish recommendations',
-          'Execution guidance and design compliance'
+          'Structural design and engineering consultation',
+          'Architectural planning, layouts, and space optimization',
+          'MEP design for mechanical, electrical, and plumbing systems',
+          '3D modeling, design visualization, and technical presentations',
+          'Material recommendations, execution guidance, and compliance support'
         ]
       }
     ]
@@ -203,7 +204,7 @@ export class ServicesComponent {
     icon: this.Layers3Icon,
     highlights: ['Project marketing', 'Property listings', 'Commercial leasing', 'Feasibility', 'Local expertise'],
     breakdownTitle: 'Real Estate Services',
-    breakdownIntro: 'We support clients, investors, brands, and developers with strategic real estate services backed by engineering insight, local market understanding, and practical execution planning.',
+    breakdownIntro: 'We support clients, investors, brands, and developers with strategic real estate services backed by engineering insight, local market understanding, practical execution planning and marketing.',
     breakdown: [
       {
         title: 'Site Evaluation & Feasibility',
@@ -231,7 +232,7 @@ export class ServicesComponent {
           'Marketing support for residential and commercial projects',
           'Listing residential and commercial properties for sale, purchase, and rentals',
           'Buyer, tenant, and investor lead generation support',
-          'Brand tie-ups for commercial spaces',
+          'Brand tie-ups for hotels',
           'Commercial leasing support for retail, office, and business spaces'
         ]
       }
