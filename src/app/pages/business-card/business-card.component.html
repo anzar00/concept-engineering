@@ -1,0 +1,96 @@
+<main class="min-h-screen bg-[#f0f4fa] text-[#072c53]">
+    <section class="relative overflow-hidden bg-gradient-to-br from-[#072c53] via-blue-900 to-[#0d2d59] px-5 py-10 text-white sm:px-8">
+        <div class="pointer-events-none absolute -right-28 -top-28 h-80 w-80 rounded-full bg-blue-500/20 blur-3xl"></div>
+        <div class="pointer-events-none absolute -bottom-32 -left-28 h-80 w-80 rounded-full bg-[#ff6c6c]/20 blur-3xl"></div>
+
+        <div class="relative z-10 mx-auto flex min-h-[calc(100vh-5rem)] max-w-5xl items-center">
+            <div class="grid w-full gap-6 lg:grid-cols-[1fr_0.85fr] lg:items-center">
+                <div class="space-y-6">
+                    <a routerLink="/" class="inline-flex items-center gap-2 text-sm font-semibold text-blue-100 transition hover:text-white">
+                        <lucide-icon [name]="ExternalLinkIcon" class="h-4 w-4 rotate-180"></lucide-icon>
+                        Visit Website
+                    </a>
+
+                    <div>
+                        <p class="mb-3 text-xs font-semibold uppercase tracking-[0.32em] text-blue-100">Digital Business Card</p>
+                        <h1 class="max-w-3xl text-4xl font-extrabold leading-tight sm:text-5xl">
+                            {{ companyName }}
+                        </h1>
+                        <p class="mt-4 max-w-2xl text-lg leading-relaxed text-blue-100">
+                            {{ tagline }} for homes, businesses, institutions, and commercial projects across Jammu & Kashmir.
+                        </p>
+                    </div>
+
+                    <div class="flex flex-wrap gap-3">
+                        <a [href]="'tel:' + phoneHref"
+                            class="inline-flex items-center gap-2 rounded bg-[#ff6c6c] px-5 py-3 font-semibold text-white shadow transition hover:bg-[#ff4c4c] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-white">
+                            <lucide-icon [name]="PhoneIcon" class="h-5 w-5"></lucide-icon>
+                            Call Now
+                        </a>
+                        <a [href]="whatsappUrl" target="_blank" rel="noopener noreferrer"
+                            class="inline-flex items-center gap-2 rounded border border-white/30 bg-white/10 px-5 py-3 font-semibold text-white transition hover:bg-white/20 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-white">
+                            <lucide-icon [name]="MessageCircleIcon" class="h-5 w-5"></lucide-icon>
+                            WhatsApp
+                        </a>
+                        <button type="button" (click)="shareCard()"
+                            class="inline-flex items-center gap-2 rounded border border-white/30 bg-white/10 px-5 py-3 font-semibold text-white transition hover:bg-white/20 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-white">
+                            <lucide-icon [name]="Share2Icon" class="h-5 w-5"></lucide-icon>
+                            Share
+                        </button>
+                    </div>
+                </div>
+
+                <article class="rounded-2xl border border-white/15 bg-white p-6 text-[#072c53] shadow-2xl sm:p-8">
+                    <div class="mb-6 flex items-start gap-4">
+                        <div class="flex h-14 w-14 shrink-0 items-center justify-center rounded-xl bg-[#072c53] text-white">
+                            <lucide-icon [name]="WrenchIcon" class="h-7 w-7"></lucide-icon>
+                        </div>
+                        <div>
+                            <h2 class="text-2xl font-bold leading-tight">{{ companyName }}</h2>
+                            <p class="mt-1 text-sm text-gray-600">{{ tagline }}</p>
+                        </div>
+                    </div>
+
+                    <div class="space-y-3">
+                        <a [href]="'tel:' + phoneHref" class="flex items-center gap-3 rounded-lg bg-[#f0f4fa] p-3 transition hover:bg-[#e7eef8]">
+                            <lucide-icon [name]="PhoneIcon" class="h-5 w-5 shrink-0 text-[#ff6c6c]"></lucide-icon>
+                            <span class="font-medium">{{ phoneDisplay }}</span>
+                        </a>
+                        <a [href]="'mailto:' + email" class="flex items-center gap-3 rounded-lg bg-[#f0f4fa] p-3 transition hover:bg-[#e7eef8]">
+                            <lucide-icon [name]="MailIcon" class="h-5 w-5 shrink-0 text-[#ff6c6c]"></lucide-icon>
+                            <span class="font-medium">{{ email }}</span>
+                        </a>
+                        <div class="flex items-center gap-3 rounded-lg bg-[#f0f4fa] p-3">
+                            <span class="h-5 w-5 shrink-0 text-center text-[#ff6c6c]">•</span>
+                            <span class="font-medium">{{ location }}</span>
+                        </div>
+                    </div>
+
+                    <div class="mt-6">
+                        <h3 class="mb-3 flex items-center gap-2 text-sm font-bold uppercase tracking-[0.18em] text-gray-500">
+                            <lucide-icon [name]="BriefcaseBusinessIcon" class="h-4 w-4"></lucide-icon>
+                            Services
+                        </h3>
+                        <div class="grid gap-2 sm:grid-cols-2">
+                            <span *ngFor="let service of services" class="rounded-lg border border-[#072c53]/10 bg-white px-3 py-2 text-sm font-semibold text-[#072c53]">
+                                {{ service }}
+                            </span>
+                        </div>
+                    </div>
+
+                    <div class="mt-6 grid gap-3 sm:grid-cols-2">
+                        <a [href]="vCardHref" download="concept-engineering-service.vcf"
+                            class="inline-flex items-center justify-center gap-2 rounded bg-[#072c53] px-4 py-3 text-sm font-semibold text-white transition hover:bg-[#0d2d59] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#ff6c6c]">
+                            <lucide-icon [name]="DownloadIcon" class="h-4 w-4"></lucide-icon>
+                            Save Contact
+                        </a>
+                        <a routerLink="/contact"
+                            class="inline-flex items-center justify-center gap-2 rounded border border-[#072c53]/20 px-4 py-3 text-sm font-semibold text-[#072c53] transition hover:bg-[#f0f4fa] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#ff6c6c]">
+                            Enquire Now
+                        </a>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </section>
+</main>
