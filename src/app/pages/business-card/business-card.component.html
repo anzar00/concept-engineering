@@ -78,6 +78,21 @@
                         </div>
                     </div>
 
+                    <div class="mt-6">
+                        <h3 class="mb-3 flex items-center gap-2 text-sm font-bold uppercase tracking-[0.18em] text-gray-500">
+                            <lucide-icon [name]="BriefcaseBusinessIcon" class="h-4 w-4"></lucide-icon>
+                            Channel Partners
+                        </h3>
+                        <div class="grid gap-3 sm:grid-cols-2">
+                            <a *ngFor="let partner of channelPartners" [href]="partner.url" target="_blank" rel="noopener noreferrer"
+                                [attr.aria-label]="'Visit ' + partner.name"
+                                class="flex min-h-24 items-center justify-center rounded-lg border border-[#072c53]/10 bg-white p-4 transition hover:-translate-y-0.5 hover:shadow-md focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#ff6c6c]">
+                                <img [src]="partner.logo" [alt]="partner.name"
+                                    class="h-14 w-32 object-contain object-center" />
+                            </a>
+                        </div>
+                    </div>
+
                     <div class="mt-6 grid gap-3 sm:grid-cols-2">
                         <a [href]="vCardHref" download="concept-engineering-service.vcf"
                             class="inline-flex items-center justify-center gap-2 rounded bg-[#072c53] px-4 py-3 text-sm font-semibold text-white transition hover:bg-[#0d2d59] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#ff6c6c]">

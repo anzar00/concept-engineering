@@ -31,8 +31,8 @@ export class BusinessCardComponent {
   readonly BriefcaseBusinessIcon = BriefcaseBusiness;
 
   readonly companyName = 'Concept Engineering Service';
-  readonly tagline = 'Engineering, Digital Solutions, Consultancy & Real Estate';
-  readonly location = 'Srinagar, Jammu & Kashmir';
+  readonly tagline = 'Engineering, Digital Solutions, PMC & Real Estate';
+  readonly location = '34, Hill View Colony East, Sector 1, Old Airport Road, Wanabal, Srinagar, Jammu & Kashmir';
   readonly email = 'ces_mailbox@yahoo.com';
   readonly phoneDisplay = '+91-700-660-3177';
   readonly phoneHref = '+917006603177';
@@ -43,6 +43,19 @@ export class BusinessCardComponent {
     'Digital Solutions',
     'Project Management & Consultancy',
     'Real Estate Services'
+  ];
+
+  readonly channelPartners = [
+    {
+      name: 'Hisense HVAC',
+      logo: 'assets/partners/hisense.png',
+      url: 'http://www.hisensehvac.com'
+    },
+    {
+      name: 'Omega Elevators',
+      logo: 'assets/partners/omega.png',
+      url: 'https://www.omega-elevators.com'
+    }
   ];
 
   get shareUrl(): string {
