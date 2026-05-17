@@ -31,7 +31,7 @@ export class BusinessCardComponent {
   readonly BriefcaseBusinessIcon = BriefcaseBusiness;
 
   readonly companyName = 'Concept Engineering Service';
-  readonly tagline = 'Engineering, Digital Solutions, PMC & Real Estate';
+  readonly tagline = 'Engineering, Digital Solutions, Real Estate and PMC';
   readonly location = '34, Hill View Colony East, Sector 1, Old Airport Road, Wanabal, Srinagar, Jammu & Kashmir';
   readonly email = 'ces_mailbox@yahoo.com';
   readonly phoneDisplay = '+91-700-660-3177';
